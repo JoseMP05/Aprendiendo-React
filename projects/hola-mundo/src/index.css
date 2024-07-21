@@ -1,0 +1,66 @@
+body{
+  background-color: #131313;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  align-content: center;
+  height: 100vh;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 24px;
+  width: 100%;
+  color: white;
+}
+
+.card__header{
+  display: grid;
+  grid-template-areas: 
+  'picture name'
+  'picture usarname';
+  gap: 4px 8px;
+}
+
+.card__picture{
+  grid-area: picture;
+  border-radius: 50%;
+  background-color: #c3c3c3;
+}
+
+.card__name{
+  grid-area: name;
+}
+
+.card__username{
+  grid-area: username;
+}
+
+.card__button{
+  padding-inline: 16px;
+  height: 32px;
+  color: black;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: white;
+  transition: background-color 300ms;
+
+  &:hover{
+    background-color: #dddddd;
+  }
+}
+
+.card__button--follow{
+  background-color: rgb(0, 145, 255);
+  color: white;
+}
