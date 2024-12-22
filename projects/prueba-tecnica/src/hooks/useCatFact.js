@@ -8,8 +8,8 @@ export default function useCatFact () {
   const refreshFact = () => {
     getRandomFact().then(setFact) // This is the same that .then((newFact) => setFact(Fact))
   }
-  
+
   useEffect(refreshFact, [])
 
-  return {fact, refreshFact}
+  return { fact, refreshFact }
 }
